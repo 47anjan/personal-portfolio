@@ -1,6 +1,4 @@
-import React from "react";
 import Navbar from "../Navbar/Navbar";
-import Container from "../Container/Container";
 import Logo from "../Logo/Logo";
 import ThemeButton from "../../Buttons/ThemeButton";
 import styled from "styled-components";
