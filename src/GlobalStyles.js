@@ -13,8 +13,8 @@ const GlobalStyles = createGlobalStyle`
 
 @font-face {
   font-family: "Neue Haas Unica";
-  src: url(/public/fonts/NeueHaasUnica-Medium.woff2) format("woff2"),
-    url(/public/fonts/NeueHaasUnica-Medium.woff) format("woff");
+  src: url(/public/fonts/NeueHaasUnica-Bold.woff2) format("woff2"),
+    url(/public/fonts/NeueHaasUnica-Bold..woff) format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -49,6 +49,11 @@ body {
   background: var(--light-canvas);
   color: var(--light-text);
   font-family: "Neue Haas Unica", sans-serif;
+}
+
+a{
+  text-decoration: none;
+
 }
 
 ol li,
