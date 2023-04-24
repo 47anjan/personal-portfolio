@@ -12,7 +12,7 @@ const ThemeButton = ({ handleTheme }) => {
         setDark((prev) => !prev);
       }}
     >
-      {dark ? <Sun /> : <Moon />}
+      {!dark ? <Sun /> : <Moon />}
     </Wrapper>
   );
 };

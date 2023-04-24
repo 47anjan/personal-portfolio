@@ -1,0 +1,129 @@
+.orbs {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  opacity: 0.4;
+  top: 0;
+  z-index: -1;
+}
+.orbs #orb1,
+.orbs #orb2,
+.orbs #orb3,
+.orbs #orb4 {
+  border-radius: 9999px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  aspect-ratio: 1/1;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  -webkit-animation: orbFloat 10s ease infinite;
+  animation: orbFloat 10s ease infinite;
+  box-shadow: 0 1px 0 rgba(17, 17, 26, 0.1), 0 8px 24px rgba(17, 17, 26, 0.1),
+    0 16px 48px rgba(17, 17, 26, 0.1);
+}
+.orbs #orb1:before,
+.orbs #orb2:before,
+.orbs #orb3:before,
+.orbs #orb4:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: orbGradient 40s ease infinite;
+  animation: orbGradient 40s ease infinite;
+  background-size: 100% 1000%;
+  background-image: linear-gradient(
+    to bottom,
+    #f437cd,
+    #162aef,
+    #f34033,
+    #17cfaf,
+    #d8a9c1,
+    #f437cd,
+    #162aef,
+    #f34033,
+    #17cfaf,
+    #d8a9c1,
+    #f437cd,
+    #162aef,
+    #f34033,
+    #17cfaf,
+    #d8a9c1
+  );
+}
+.orbs #orb1 {
+  width: 25%;
+  z-index: 4;
+  align-self: flex-start;
+}
+.orbs #orb2 {
+  margin-left: -10%;
+  -webkit-animation-duration: 20s;
+  animation-duration: 20s;
+  width: 55%;
+  z-index: 3;
+}
+.orbs #orb2:before {
+  animation-direction: reverse;
+}
+.orbs #orb3 {
+  width: 40%;
+  z-index: 2;
+  margin-left: -10%;
+  margin-top: 10%;
+  align-self: flex-end;
+  -webkit-animation-duration: 15s;
+  animation-duration: 15s;
+}
+.orbs #orb4 {
+  background-color: #00f;
+  width: 50%;
+  z-index: 1;
+  animation-direction: reverse;
+  margin-left: -30%;
+}
+@-webkit-keyframes orbGradient {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+@keyframes orbGradient {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+@-webkit-keyframes orbFloat {
+  0% {
+    transform: translatey(-20px);
+  }
+  50% {
+    transform: translatey(20px);
+  }
+  100% {
+    transform: translatey(-20px);
+  }
+}
+@keyframes orbFloat {
+  0% {
+    transform: translatey(-20px);
+  }
+  50% {
+    transform: translatey(20px);
+  }
+  100% {
+    transform: translatey(-20px);
+  }
+}

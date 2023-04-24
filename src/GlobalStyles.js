@@ -9,6 +9,8 @@ const GlobalStyles = createGlobalStyle`
   --light-canvas: #fff;
   --light-well: #e6e6e6;
   --light-text: #161e40;
+
+  isolation: isolate;
 }
 
 @font-face {
@@ -46,8 +48,8 @@ margin: 0;
 }
 
 body {
-  background: var(--light-canvas);
-  color: var(--light-text);
+   background-color: ${(p) => p.theme.colors.canvas};
+  color: ${(p) => p.theme.colors.text};
   font-family: "Neue Haas Unica", sans-serif;
 }
 
@@ -66,6 +68,6 @@ h1 {
   font-size: 3rem;
   font-weight: 500;
   letter-spacing: -0.15rem;
-  line-height: 1.15;
+  line-height: 1.3;
 }`;
 export default GlobalStyles;

@@ -2,6 +2,7 @@ import Navbar from "../Navbar/Navbar";
 import Logo from "../Logo/Logo";
 import ThemeButton from "../../Buttons/ThemeButton";
 import styled from "styled-components";
+import NavLink from "../Navbar/NavLink";
 
 const Header = ({ handleTheme }) => {
   return (

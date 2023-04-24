@@ -1,6 +1,9 @@
 import styled, { ThemeProvider } from "styled-components";
 import Header from "./components/Header/Header";
 import { useState } from "react";
+import Home from "./pages/Home/Home";
+import GlobalStyles from "./GlobalStyles";
+import Container from "./components/Container/Container";
 
 function App() {
   const [dark, setDark] = useState(false);
@@ -24,17 +27,15 @@ function App() {
   const handleTheme = () => setDark((prev) => !prev);
 
   return (
-    <ThemeProvider theme={dark ? themeDark : themeLight}>
-      <Wrapper>
-        <Header handleTheme={handleTheme} />
-      </Wrapper>
+    <ThemeProvider theme={!dark ? themeDark : themeLight}>
+      <Header handleTheme={handleTheme} />
+
+      <Container>
+        <Home />
+      </Container>
+      <GlobalStyles />
     </ThemeProvider>
   );
 }
-
-const Wrapper = styled.div`
-  background-color: ${(p) => p.theme.colors.canvas};
-  color: ${(p) => p.theme.colors.text};
-`;
 
 export default App;
