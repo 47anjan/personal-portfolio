@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Logo = () => {
-  return <Link>Anjan Karmakar</Link>;
+  return <Wrapper to={"/"}>Anjan Karmakar</Wrapper>;
 };
 
-const Link = styled.a`
+const Wrapper = styled(Link)`
   margin-right: auto;
   font-weight: 500;
 `;

@@ -4,8 +4,8 @@ import NavLink from "./NavLink";
 const Navbar = () => {
   return (
     <Nav>
-      <NavLink>Profile</NavLink>
-      <NavLink>Work</NavLink>
+      <NavLink to={"/profile"}>Profile</NavLink>
+      <NavLink to={"/work"}>Work</NavLink>
     </Nav>
   );
 };

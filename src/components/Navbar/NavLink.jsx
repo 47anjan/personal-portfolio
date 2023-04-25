@@ -1,15 +1,16 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const NavLink = ({ children }) => {
+const NavLink = ({ children, to }) => {
   return (
-    <Wrapper>
+    <Wrapper to={to}>
       <MainText>{children}</MainText>
       <HoverText>{children}</HoverText>
     </Wrapper>
   );
 };
 
-const Wrapper = styled.a`
+const Wrapper = styled(Link)`
   display: block;
   font-size: 1.125rem;
   text-decoration: none;

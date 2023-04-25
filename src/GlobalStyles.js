@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, keyframes } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 
@@ -55,7 +55,7 @@ body {
 
 a{
   text-decoration: none;
-
+ color: ${(p) => p.theme.colors.text};
 }
 
 ol li,
@@ -65,9 +65,12 @@ ul li {
   line-height: 1.6;
 }
 h1 {
-  font-size: 3rem;
-  font-weight: 500;
-  letter-spacing: -0.15rem;
+  font-size: 2.4rem;
+  font-size: clamp(2.4rem, 2.2rem + 0.75vw, 3rem);
+  font-weight: 700;
   line-height: 1.3;
-}`;
+}
+
+`;
+
 export default GlobalStyles;

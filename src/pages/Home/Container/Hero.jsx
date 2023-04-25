@@ -2,10 +2,10 @@ import styled from "styled-components";
 import BackgroundOrbs from "./Orbs/BackgroundOrbs";
 import { ArrowRight } from "react-feather";
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 export const Hero = () => {
   const container = {
-    hidden: { y: 25, opacity: 0 },
+    hidden: { y: 30, opacity: 0 },
     visible: {
       y: 0,
       opacity: 1,
@@ -31,7 +31,7 @@ export const Hero = () => {
             currently loking for opportunity to show my skills.
           </ProfileInfo>
 
-          <LinkWrpper>
+          <LinkWrpper to={"/profile"}>
             <ProflileLink>View profile</ProflileLink>
             <div style={{ paddingTop: "12px" }}>
               <ArrowRight className="icon" />
@@ -44,21 +44,26 @@ export const Hero = () => {
 };
 
 const Heading = styled.h1`
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  @media (min-width: 440px) {
+    text-align: left;
+  }
 `;
 
 const Content = styled.div`
-  padding-top: 5rem;
+  padding-top: 4rem;
 `;
 
 const ProfileInfo = styled.p`
   margin-block: 1rem;
 `;
 
-const LinkWrpper = styled.div`
+const LinkWrpper = styled(Link)`
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  width: fit-content;
 
   .icon {
     transition: all 0.3s linear;

@@ -1,18 +1,18 @@
-import { useState } from "react";
+import { useContext } from "react";
 import { Moon, Sun } from "react-feather";
 import styled from "styled-components";
+import { ThemeContext } from "styled-components";
 
-const ThemeButton = ({ handleTheme }) => {
-  const [dark, setDark] = useState(false);
+const ThemeButton = () => {
+  const { state } = useContext(ThemeContext);
 
   return (
     <Wrapper
       onClick={() => {
-        handleTheme();
-        setDark((prev) => !prev);
+        state?.setDark((prev) => !prev);
       }}
     >
-      {!dark ? <Sun /> : <Moon />}
+      {state?.dark ? <Sun /> : <Moon />}
     </Wrapper>
   );
 };
