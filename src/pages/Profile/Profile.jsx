@@ -1,28 +1,67 @@
 import styled from "styled-components";
-
+import { RoughNotationGroup, RoughNotation } from "react-rough-notation";
 const Profile = () => {
   return (
     <Wrapper>
       <Heading>Profile</Heading>
 
       <ProfileInfo>
-        <p>
-          Hey there! 👋
-          <Break />
-          I'm Anjan, a self-taught Front-end developer with a passion for
-          creating intuitive and visually appealing web applications.
-          <Break />
-          Although I do not have any computer science background, But the
-          passion for tech has got me here, and I am super proud that I am where
-          I am now. I have a particular interest in front-end development, and I
-          love to build intuitive, user-friendly applications
-          <Break />
-          Currently, I am proficient in HTML, CSS, JavaScript, and React.
-          committed to staying current with the latest industry trends and
-          continuously learning to enhance my skills. Looking to join a company
-          where I can grow as a developer and contribute to creating innovative
-          and impactful digital experiences. Hire me?
-        </p>
+        <RoughNotationGroup show={true}>
+          <p>
+            Hey there! 👋
+            <Break />
+            I'm Anjan, a{" "}
+            <RoughNotation strokeWidth={"3px"} type="circle">
+              self-taught
+            </RoughNotation>
+            {"  "}
+            <RoughNotation strokeWidth={"2px"} type="highlight" color="#fd7215">
+              {" "}
+              Front-end developer
+            </RoughNotation>{" "}
+            with a passion for creating{" "}
+            <RoughNotation type="highlight" color="#ffff00">
+              <span style={{ color: "#161E40" }}>
+                intuitive and visually appealing
+              </span>
+            </RoughNotation>{" "}
+            web applications.
+            <Break />
+            Although I do not have any{" "}
+            <RoughNotation
+              strokeWidth={"2px"}
+              color="#044761"
+              type="strike-through"
+            >
+              computer science
+            </RoughNotation>{" "}
+            background, But the{" "}
+            <RoughNotation type="highlight" color="#ECEFF1">
+              <span style={{ color: "#161E40" }}>passion for tech</span>
+            </RoughNotation>{" "}
+            has got me here, and I am super proud that I am where I am now. I
+            have a particular interest in front-end development, and I love to
+            build interactive, user-friendly applications
+            <Break />
+            Currently, I am proficient in{" "}
+            <RoughNotation color="#fca063" type="highlight">
+              HTML, CSS, JavaScript
+            </RoughNotation>
+            , and <RoughNotation type="circle">React</RoughNotation>. committed
+            to staying current with the latest industry trends and continuously
+            learning to enhance my skills. Looking to join a company where I can
+            grow as a developer and{" "}
+            <RoughNotation multiline color="#c8f5cc" type="highlight">
+              <span style={{ color: "#161E40" }}>
+                contribute to creating innovative and impactful digital
+                experiences.
+              </span>
+            </RoughNotation>{" "}
+            <RoughNotation strokeWidth={"3px"} type="underline">
+              Hire me?
+            </RoughNotation>
+          </p>
+        </RoughNotationGroup>
       </ProfileInfo>
       <Line />
 
