@@ -1,4 +1,4 @@
-import { createGlobalStyle, keyframes } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 
@@ -69,6 +69,19 @@ h1 {
   font-size: clamp(2.4rem, 2.2rem + 0.75vw, 3rem);
   font-weight: 700;
   line-height: 1.3;
+}
+
+a[href^="https://twitter.com"]
+{
+  color: #55acee;
+}
+a[href^="https://github.com"]
+{
+  color: #aaa;
+}
+a[href^="https://www.linkedin.com/in/"]
+{
+  color: #ea4c89;
 }
 
 `;
