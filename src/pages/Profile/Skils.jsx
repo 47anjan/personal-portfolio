@@ -2,15 +2,16 @@ import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
 
-const Skils = ({ name, icon }) => {
+const Skils = ({ item }) => {
   return (
     <motion.div
+      title={`${item.name}${item?.basic ? " (basic)" : ""} `}
       whileInView={{ scale: [0.2, 1], opacity: [0, 1] }}
       transition={{ duration: 0.3, ease: "linear" }}
     >
       <SkillWrapper>
-        <img src={icon} alt="" />
-        <h4>{name}</h4>
+        <img src={item.icon} alt="" />
+        <h4>{item.name}</h4>
       </SkillWrapper>
     </motion.div>
   );

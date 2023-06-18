@@ -28,7 +28,7 @@ export const Hero = () => {
           </Heading>
           <ProfileInfo>
             👋 Hey I'm Anjan, a frontend engineer based in Bangladesh. I'm
-            currently loking for opportunity to show my skills.
+            currently loking for opportunity to expends my skills.
           </ProfileInfo>
 
           <LinkWrpper to={"/profile"}>

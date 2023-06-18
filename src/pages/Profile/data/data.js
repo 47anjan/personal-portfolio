@@ -53,6 +53,19 @@ const data = [
     id: "11",
     name: "Redux Toolkit",
     icon: "/assets/redux.png",
+    basic: true,
+  },
+  {
+    id: "12",
+    name: "Express js",
+    icon: "/assets/Expressjs.png",
+    basic: true,
+  },
+  {
+    id: "13",
+    name: "MongoDB",
+    icon: "/assets/mongo.png",
+    basic: true,
   },
 ];
 

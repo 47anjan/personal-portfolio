@@ -28,7 +28,7 @@ const Profile = () => {
                 {" "}
                 Front-end developer
               </RoughNotation>{" "}
-              with a passion for creating{" "}
+              with an enthusiasm for creating{" "}
               <RoughNotation
                 multiline
                 strokeWidth={"2px"}
@@ -73,7 +73,7 @@ const Profile = () => {
                 </span>
               </RoughNotation>{" "}
               <RoughNotation multiline strokeWidth={"3px"} type="underline">
-                Hire me?
+                <a href="#link">Hire me?</a>
               </RoughNotation>
             </p>
           </RoughNotationGroup>
@@ -86,14 +86,14 @@ const Profile = () => {
         <SubHeading>Skills</SubHeading>
         <SkillsContainer>
           {data?.map((item) => (
-            <Skils key={item.id} name={item.name} icon={item.icon} />
+            <Skils key={item.id} item={item} />
           ))}
         </SkillsContainer>
       </section>
       <Line />
       <section>
         <SubHeading>Get in touch</SubHeading>
-        <article>
+        <article id="link">
           <p>
             You can find me at various places around the web, including{" "}
             <a
