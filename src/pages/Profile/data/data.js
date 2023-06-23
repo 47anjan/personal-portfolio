@@ -51,8 +51,8 @@ const data = [
   },
   {
     id: "11",
-    name: "Redux Toolkit",
-    icon: "/assets/redux.png",
+    name: "Typescript",
+    icon: "typescript.svg",
     basic: true,
   },
   {
