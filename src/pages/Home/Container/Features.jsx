@@ -1,10 +1,17 @@
 import styled from "styled-components";
-
+import projects from "../../../data/projects";
+import ProjectCard from "../../../components/Card/ProjectCard";
 const Features = () => {
   return (
     <section>
       <Title>Selected work</Title>
-      <CardContainer></CardContainer>
+      <CardContainer>
+        {projects
+          ?.filter((project) => project.selected)
+          .map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
+      </CardContainer>
     </section>
   );
 };

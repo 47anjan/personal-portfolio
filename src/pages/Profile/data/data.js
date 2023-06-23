@@ -52,7 +52,7 @@ const data = [
   {
     id: "11",
     name: "Typescript",
-    icon: "typescript.svg",
+    icon: "/assets/typescript.svg",
     basic: true,
   },
   {

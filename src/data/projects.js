@@ -1,0 +1,36 @@
+export default [
+  {
+    id: 1,
+    title: "Unilearners",
+    disc: "An education-based site for sharing and exploring classes for instructors and students.",
+    tools: [
+      "React JS",
+      "Tailwind",
+      "daisyUI",
+      "React query",
+      "Firebase",
+      "Nodejs",
+      "Express",
+      "MongoDB",
+      "Stripe",
+    ],
+    image: "/assets/Unilearner.png",
+    selected: true,
+  },
+  {
+    id: 2,
+    title: "Project Netflix",
+    disc: "An entertainment base site for exploring movies and TV shows",
+    tools: ["React JS", "Tailwind"],
+    image: "/assets/netflix.png",
+    selected: true,
+  },
+  {
+    id: 3,
+    title: " Linkedin Landing page",
+    disc: "A real-world landing page based on LinkedIn",
+    tools: ["React JS", "Style-components"],
+    image: "/assets/linkedin.png",
+    selected: true,
+  },
+];

@@ -2,21 +2,15 @@ import { ArrowRight } from "react-feather";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const ProjectCard = () => {
+const ProjectCard = ({ project }) => {
   return (
     <Card>
       <div>
-        <Image
-          src="https://alexjpate.com/img/featured-images/year-in-monzo-2020.png"
-          alt=""
-        />
+        <Image src={project?.image} alt={project?.title} />
       </div>
       <div>
-        <h3>Year in Monzo 2020</h3>
-        <p>
-          A unique experience in to how each customer has spent over the past
-          year
-        </p>
+        <h3>{project?.title}</h3>
+        <p>{project?.disc}</p>
         <LinkWrpper to={"/"}>
           <ProjectLink>Read More</ProjectLink>
           <div style={{ paddingTop: "8px" }}>
@@ -73,6 +67,12 @@ const Image = styled.img`
   width: 100%;
   display: block;
   border-radius: 6px;
+
+  @media (min-width: 640px) {
+    width: 336px;
+    height: 175px;
+    object-fit: cover;
+  }
 `;
 
 export default ProjectCard;
