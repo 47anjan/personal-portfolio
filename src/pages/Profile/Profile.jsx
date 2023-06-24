@@ -73,7 +73,7 @@ const Profile = () => {
                 </span>
               </RoughNotation>{" "}
               <RoughNotation multiline strokeWidth={"3px"} type="underline">
-                <a href="#link">Hire me?</a>
+                <a href="mailto:anjankarmakar15@gmail.com">Hire me?</a>
               </RoughNotation>
             </p>
           </RoughNotationGroup>
@@ -93,7 +93,7 @@ const Profile = () => {
       <Line />
       <section>
         <SubHeading>Get in touch</SubHeading>
-        <article id="link">
+        <article>
           <p>
             You can find me at various places around the web, including{" "}
             <a
@@ -122,6 +122,14 @@ const Profile = () => {
             . Or send me an email on{" "}
             <a href="mailto:anjankarmakar15@gmail.com">
               anjankarmakar15@gmail.com
+            </a>{" "}
+            <a
+              rel="noreferrer"
+              target="_blank"
+              style={{ color: "#55acee", textDecoration: "underline" }}
+              href="https://drive.google.com/file/d/1DSmzs1mhLjMvmpL1AjTyGBQY8xSksDjr/view"
+            >
+              resume
             </a>
           </p>
         </article>
