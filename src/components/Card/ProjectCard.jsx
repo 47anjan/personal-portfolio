@@ -11,7 +11,7 @@ const ProjectCard = ({ project }) => {
       <div>
         <h3>{project?.title}</h3>
         <p>{project?.disc}</p>
-        <LinkWrpper to={"/"}>
+        <LinkWrpper to={`/project/${project?.id}`}>
           <ProjectLink>Read More</ProjectLink>
           <div style={{ paddingTop: "8px" }}>
             <ArrowRight size={19} className="icon" />

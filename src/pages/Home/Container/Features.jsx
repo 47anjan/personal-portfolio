@@ -4,7 +4,7 @@ import ProjectCard from "../../../components/Card/ProjectCard";
 const Features = () => {
   return (
     <section>
-      <Title>Selected work</Title>
+      <Title>Selected Project</Title>
       <CardContainer>
         {projects
           ?.filter((project) => project.selected)

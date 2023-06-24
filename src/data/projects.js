@@ -1,6 +1,26 @@
 export default [
   {
     id: 1,
+    title: "Google Keep",
+    disc: "A note app inspired by google keep",
+    tools: [
+      "React JS",
+      "Tailwind",
+      "Firebase",
+      "React query",
+      "Nodejs",
+      "Express",
+      "MongoDB",
+    ],
+    image: "/assets/googlekeep.png",
+    selected: false,
+
+    live: "https://keep-client-42341.web.app",
+    client: "https://github.com/anjankarmakar10/google-keep-client",
+    server: "https://github.com/anjankarmakar10/google-keep-server",
+  },
+  {
+    id: 2,
     title: "Unilearners",
     disc: "An education-based site for sharing and exploring classes for instructors and students.",
     tools: [
@@ -16,21 +36,28 @@ export default [
     ],
     image: "/assets/Unilearner.png",
     selected: true,
+    live: "https://unilearners-client.web.app",
+    client: "https://github.com/anjankarmakar10/unilearners-client",
+    server: "https://github.com/anjankarmakar10/unilearners-server",
   },
   {
-    id: 2,
+    id: 3,
     title: "Project Netflix",
     disc: "An entertainment base site for exploring movies and TV shows",
     tools: ["React JS", "Tailwind"],
     image: "/assets/netflix.png",
     selected: true,
+    live: "https://majestic-sfogliatella-77e5bd.netlify.app",
+    client: "https://github.com/anjankarmakar10/project-netflix",
   },
   {
-    id: 3,
+    id: 4,
     title: " Linkedin Landing page",
     disc: "A real-world landing page based on LinkedIn",
     tools: ["React JS", "Style-components"],
     image: "/assets/linkedin.png",
     selected: true,
+    live: "https://linked-in-clone-three-dun.vercel.app/",
+    client: "https://github.com/anjankarmakar10/linkedIn-clone",
   },
 ];
