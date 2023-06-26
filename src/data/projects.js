@@ -14,7 +14,13 @@ export default [
     ],
     image: "/assets/googlekeep.png",
     selected: false,
-
+    features: [
+      "Frontend is developed with React JS, Tailwind",
+      "Firebase is used for user authentication and MongoDB is used to store note",
+      "Firebase for user authentication",
+      "User can create update and delete note",
+      "Ability to customize note color",
+    ],
     live: "https://keep-client-42341.web.app",
     client: "https://github.com/anjankarmakar10/google-keep-client",
     server: "https://github.com/anjankarmakar10/google-keep-server",
@@ -34,6 +40,16 @@ export default [
       "MongoDB",
       "Stripe",
     ],
+    features: [
+      "Clean and user friendly user interface",
+      "Frontend is developed with React JS, Tailwind, and DaisyUI.",
+      "The backend was developed with Express, Node JS, and MongoDB",
+      "Firebase and JWT are used for user authentication",
+      "Implement code splitting to increase performance.",
+      "Admin: admin can manage classes and users",
+      "Instructor: Instructor can add classes and also manage won classes",
+      "Student: student can select classes and also enroll; student also can see classes selected, enrolled, and payment history.",
+    ],
     image: "/assets/Unilearner.png",
     selected: true,
     live: "https://unilearners-client.web.app",
@@ -49,6 +65,11 @@ export default [
     selected: true,
     live: "https://majestic-sfogliatella-77e5bd.netlify.app",
     client: "https://github.com/anjankarmakar10/project-netflix",
+    features: [
+      "Frontend is developed with React JS, and Tailwind",
+      "User can see movies detail, search and also bookmark them",
+      "All data come from  TMDb Movie Database",
+    ],
   },
   {
     id: 4,
@@ -59,5 +80,9 @@ export default [
     selected: true,
     live: "https://linked-in-clone-three-dun.vercel.app/",
     client: "https://github.com/anjankarmakar10/linkedIn-clone",
+    features: [
+      "A clean and fully responsive user interface",
+      "Frontend is utilized with React JS, Style-Components",
+    ],
   },
 ];

@@ -31,6 +31,15 @@ const Project = () => {
       </LinkContainer>
 
       <Disc>{project.disc}</Disc>
+
+      <FeatureContainre>
+        <h2>Features</h2>
+        <ul>
+          {project?.features.map((feature, index) => (
+            <li key={index}>{feature}</li>
+          ))}
+        </ul>
+      </FeatureContainre>
     </div>
   );
 };
@@ -87,6 +96,18 @@ const LinkContainer = styled.div`
 
 const Disc = styled.p`
   margin-block: 20px;
+`;
+
+const FeatureContainre = styled.section`
+  h2 {
+    margin-block: 18px;
+  }
+  li {
+    font-size: 1.25rem;
+    margin-left: 20px;
+    line-height: 1.3;
+    margin-bottom: 8px;
+  }
 `;
 
 export default Project;
