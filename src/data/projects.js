@@ -17,7 +17,6 @@ export default [
     features: [
       "Frontend is developed with React JS, Tailwind",
       "Firebase is used for user authentication and MongoDB is used to store note",
-      "Firebase for user authentication",
       "User can create update and delete note",
       "Ability to customize note color",
     ],
