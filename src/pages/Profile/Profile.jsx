@@ -123,14 +123,7 @@ const Profile = () => {
             <a href="mailto:anjankarmakar15@gmail.com">
               anjankarmakar15@gmail.com
             </a>{" "}
-            <a
-              rel="noreferrer"
-              target="_blank"
-              style={{ color: "#55acee", textDecoration: "underline" }}
-              href="https://drive.google.com/file/d/1DSmzs1mhLjMvmpL1AjTyGBQY8xSksDjr/view"
-            >
-              resume
-            </a>
+            <Button>Resume</Button>
           </p>
         </article>
       </section>
@@ -162,6 +155,22 @@ const SubHeading = styled.h2`
   margin-block: 20px 16px;
   font-size: 1.5rem;
   letter-spacing: normal;
+`;
+
+const Button = styled.button`
+  padding-block: 6px;
+  padding-inline: 32px;
+  background: rgb(59, 130, 246);
+  background: linear-gradient(
+    90deg,
+    rgba(59, 130, 246, 1) 0%,
+    rgba(16, 185, 129, 1) 100%
+  );
+  border: 0;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  margin-left: 8px;
 `;
 
 export default Profile;
