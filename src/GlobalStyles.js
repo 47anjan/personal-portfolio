@@ -86,6 +86,12 @@ a[href^="https://www.linkedin.com/in/"]
 {
   color: #ea4c89;
 }
+a[href^="mailto:anjankarmakar15@gmail.com"]
+{
+  color: #FBBC05;
+}
+
+
 
 `;
 

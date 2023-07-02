@@ -51,10 +51,10 @@ const ContactInfo = () => {
 };
 
 const Button = styled.a`
-  padding-block: 4px;
+  padding-block: 2px;
   padding-inline: 32px;
   background: rgb(59, 130, 246);
-  padding-bottom: 6px;
+  padding-bottom: 5px;
   background: linear-gradient(
     90deg,
     rgba(59, 130, 246, 1) 0%,
@@ -65,7 +65,7 @@ const Button = styled.a`
   color: white;
   cursor: pointer;
   margin-left: 8px;
-  font-size: 0.9rem;
+  font-size: 1rem;
 `;
 
 export default ContactInfo;
