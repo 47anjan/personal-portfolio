@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
-import React from "react";
 import styled from "styled-components";
 
-const Skils = ({ item }) => {
+const Skill = ({ item }) => {
   return (
     <motion.div
       title={`${item.name}${item?.basic ? " (basic)" : ""} `}
@@ -39,4 +38,4 @@ const SkillWrapper = styled.div`
   }
 `;
 
-export default Skils;
+export default Skill;
