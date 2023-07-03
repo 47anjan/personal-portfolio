@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import projects from "../../data/projects";
 import styled from "styled-components";
+import Snapshots from "./Snapshots";
 const Project = () => {
   const { id } = useParams();
 
@@ -40,6 +41,7 @@ const Project = () => {
           ))}
         </ul>
       </FeatureContainre>
+      <Snapshots snapshots={project?.images} />
     </div>
   );
 };
@@ -108,6 +110,7 @@ const FeatureContainre = styled.section`
     line-height: 1.3;
     margin-bottom: 8px;
   }
+  margin-bottom: 20px;
 `;
 
 export default Project;

@@ -2,7 +2,8 @@ import styled from "styled-components";
 import BackgroundOrbs from "./Orbs/BackgroundOrbs";
 import { ArrowRight } from "react-feather";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { LinkWrpper, ProflileLink } from "../style/home.style";
+
 export const Hero = () => {
   const container = {
     hidden: { y: 30, opacity: 0 },
@@ -57,27 +58,6 @@ const Content = styled.div`
 
 const ProfileInfo = styled.p`
   margin-block: 1rem;
-`;
-
-const LinkWrpper = styled(Link)`
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  width: fit-content;
-
-  .icon {
-    transition: all 0.3s linear;
-  }
-
-  &:hover .icon {
-    margin-left: 0.5rem;
-    transition: all 0.15s linear;
-  }
-`;
-
-const ProflileLink = styled.a`
-  font-size: 1.3rem;
-  line-height: 1.6;
 `;
 
 const Wrapper = styled.section`
