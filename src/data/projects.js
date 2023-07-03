@@ -95,7 +95,7 @@ export default [
       },
       {
         info: "Instructor: All classes",
-        img: "assets/note-delete.png",
+        img: "assets/allclasses.png",
       },
       {
         info: "Admin: Manage classes",
