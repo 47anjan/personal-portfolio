@@ -26,15 +26,15 @@ export default [
     images: [
       {
         info: "Homepage",
-        img: "/public/assets/notes.png",
+        img: "assets/notes.png",
       },
       {
         info: "Page for pin notes",
-        img: "/public/assets/note-pin.png",
+        img: "assets/note-pin.png",
       },
       {
         info: "Page for deleted notes",
-        img: "/public/assets/note-delete.png",
+        img: "assets/note-delete.png",
       },
     ],
   },
@@ -71,39 +71,39 @@ export default [
     images: [
       {
         info: "Student: View class",
-        img: "/public/assets/class.png",
+        img: "assets/class.png",
       },
       {
         info: "Student: Selected classes",
-        img: "/public/assets/selected.png",
+        img: "assets/selected.png",
       },
       {
         info: "Student: Enrolled classes",
-        img: "/public/assets/enrolled.png",
+        img: "assets/enrolled.png",
       },
       {
         info: "Student: Payment page",
-        img: "/public/assets/payment.png",
+        img: "assets/payment.png",
       },
       {
         info: "Student:Payments history",
-        img: "/public/assets/paymenthistory.png",
+        img: "assets/paymenthistory.png",
       },
       {
         info: "Instructor: Add class",
-        img: "/public/assets/addclass.png",
+        img: "assets/addclass.png",
       },
       {
         info: "Instructor: All classes",
-        img: "/public/assets/note-delete.png",
+        img: "assets/note-delete.png",
       },
       {
         info: "Admin: Manage classes",
-        img: "/public/assets/manageclasses.png",
+        img: "assets/manageclasses.png",
       },
       {
         info: "Admin: Manage users",
-        img: "/public/assets/manageusers.png",
+        img: "assets/manageusers.png",
       },
     ],
   },
@@ -124,27 +124,27 @@ export default [
     images: [
       {
         info: "Homepage",
-        img: "/public/assets/homepagenetflix.png",
+        img: "assets/homepagenetflix.png",
       },
       {
         info: "Movies",
-        img: "/public/assets/movies.png",
+        img: "assets/movies.png",
       },
       {
         info: "Tv Shows",
-        img: "/public/assets/tv.png",
+        img: "assets/tv.png",
       },
       {
         info: "Trending",
-        img: "/public/assets/trending.png",
+        img: "assets/trending.png",
       },
       {
         info: "My List",
-        img: "/public/assets/mylist.png",
+        img: "assets/mylist.png",
       },
       {
         info: "Search page",
-        img: "/public/assets/search.png",
+        img: "assets/search.png",
       },
     ],
   },
@@ -164,7 +164,7 @@ export default [
     images: [
       {
         info: "Homepage",
-        img: "/public/assets/linkedinhome.png",
+        img: "assets/linkedinhome.png",
       },
     ],
   },
