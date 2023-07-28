@@ -40,8 +40,6 @@ const GlobalStyles = createGlobalStyle`
   font-display: swap;
 }
 
-
-
 * {
 margin: 0;
   padding: 0;
