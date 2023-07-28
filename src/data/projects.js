@@ -113,7 +113,7 @@ export default [
     disc: "An entertainment base site for exploring movies and TV shows",
     tools: ["ReactJS", "TailwindCSS"],
     image: "/assets/netflix.png",
-    selected: true,
+    selected: false,
     live: "https://majestic-sfogliatella-77e5bd.netlify.app",
     client: "https://github.com/anjankarmakar10/project-netflix",
     features: [
@@ -165,6 +165,41 @@ export default [
       {
         info: "Homepage",
         img: "assets/linkedinhome.png",
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "LeetGame",
+    disc: "A Video Game Discovery Web App! This project is a web application inspired by Rawg, designed to help users discover new and exciting video games. With a sleek and intuitive interface, powerful features, and seamless navigation, this app aims to provide an immersive gaming experience",
+    tools: [
+      "ReactJS",
+      "TypeScript",
+      "Chakra UI",
+      "React Query",
+      "Zustand",
+      "React Router",
+      "Axios",
+    ],
+    image: "/assets/leetgame.png",
+    selected: true,
+    live: "https://leetgame-fbb46.web.app/",
+    client: "https://github.com/anjankarmakar10/leetgame-typescript",
+    features: [
+      "Game Search: Easily search for your favorite games using keywords and get instant results.",
+      "Game Details: Dive deep into the details of each game, including ratings, descriptions, genres, and screenshots.",
+      "Infinite Scroll: Enjoy endless browsing with the implementation of infinite scroll, loading more games as you scroll down.",
+      "Dark Mode: Personalize your experience with a stylish and eye-friendly dark mode",
+      "Responsive Design: The app is fully responsive, ensuring a seamless experience across various devices and screen sizes.",
+    ],
+    images: [
+      {
+        info: "Homepage",
+        img: "assets/leetgame-home.png",
+      },
+      {
+        info: "Details Page",
+        img: "assets/leetgamedetails.png",
       },
     ],
   },

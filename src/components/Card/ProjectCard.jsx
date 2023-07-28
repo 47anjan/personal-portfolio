@@ -10,7 +10,7 @@ const ProjectCard = ({ project }) => {
       </div>
       <div>
         <h3>{project?.title}</h3>
-        <p>{project?.disc}</p>
+        <p className="line-clamp">{project?.disc}</p>
         <LinkWrpper to={`/work/${project?.id}`}>
           <ProjectLink>Read More</ProjectLink>
           <div style={{ paddingTop: "6px" }}>
