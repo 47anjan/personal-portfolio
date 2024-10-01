@@ -19,7 +19,7 @@ const ContactInfo = () => {
           <a
             rel="noreferrer"
             target="_blank"
-            href="https://www.linkedin.com/in/anjankarmakar10/"
+            href="https://www.linkedin.com/in/47anjan/"
           >
             Linkdin
           </a>
@@ -27,7 +27,7 @@ const ContactInfo = () => {
           <a
             rel="noreferrer"
             target="_blank"
-            href="https://github.com/anjankarmakar10"
+            href="https://github.com/47anjan"
           >
             GitHub
           </a>
