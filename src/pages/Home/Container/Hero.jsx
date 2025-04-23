@@ -24,12 +24,12 @@ export const Hero = () => {
           animate="visible"
         >
           <Heading>
-            A Frontend Developer love to building tools that are user-friendly,
+            A Frontend Developer loves to building tools that are user-friendly,
             simple and delightful
           </Heading>
           <ProfileInfo>
-            👋 Hey I'm Anjan, a frontend engineer based in Bangladesh. I'm
-            currently loking for opportunity to expends my skills.
+            👋 Hey, I'm Anjan, a frontend engineer based in Bangladesh. I'm
+            Currently looking for the opportunity to expand my skills.
           </ProfileInfo>
 
           <LinkWrpper to={"/profile"}>
